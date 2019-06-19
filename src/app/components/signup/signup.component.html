@@ -1,0 +1,33 @@
+<div class="container mt-3">
+
+    <div class="card">
+        <div class="card-body">
+
+            <h2>Has sido invitado a un torneo en Softtek</h2>
+            <h5 class="text-muted">Por favor introduce una contraseña para continuar</h5>
+            <br>
+
+            <input type="text" class="form-control" placeholder="Nickname">
+            <input type="text" class="form-control mt-2 mb-2" placeholder="E-Mail">
+            <div class="input-group mb-3">
+                <input id="pfield" (keyup)="savePasswodValue(pswrdField.value)" #pswrdField class="form-control" placeholder="Ingresa un password seguro" type="password" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                      <input appShowPassword type="checkbox" name="" id="view-password" [value]="password" [inputValue]="passwordShown" (click)="showPassword()">
+                    </span>
+                </div>
+            </div>
+
+
+            <ul>
+                <li>Uso de mayúsculas y minúsculas</li>
+                <li>Al menos un número</li>
+                <li>Al menos un caracter especial</li>
+                <li>Muestra de sangre</li>
+            </ul>
+
+            <button type="button" name="" id="" class="btn btn-outline-success btn-lg btn-block"><i class="fas fa-user-check"></i> Completar registro</button>
+        </div>
+    </div>
+
+</div>

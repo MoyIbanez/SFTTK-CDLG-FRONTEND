@@ -1,0 +1,53 @@
+#loginBG {
+    background: linear-gradient(45deg, rgb(66, 218, 197), rgb(0, 140, 255));
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+#loginForm {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: calc(15%);
+}
+
+.img_icon_comunicados{
+    width:  30px;
+    height: 30px;
+}
+
+.textarea_comunicados{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.check_comunicados{
+    width:  20px;
+    height: 20px;
+}
+
+#agregarForm{
+
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 50px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: calc(15%);
+}
+ #buttonguardar{
+     background: rgb(255, 255, 255);
+     margin: auto;
+     border-radius: 10px;
+ }
