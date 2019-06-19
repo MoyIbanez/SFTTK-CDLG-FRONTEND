@@ -1,0 +1,15 @@
+
+
+1° Quitar el div de torneos de dashboard;
+2° La imagen del "VS" quitar el fondo, O pueden poner una fuente similar y meterles CSS.
+3° Separar un poco mas las imagenes
+4° Encapzular componentes para compactar aplicacion
+5° Centrar los elementos de agregarUsuario
+
+
+
+Cambios Realizados por jc
+*Instale por npm bootstrap jquery Fontaesome popper
+
+
+Chavos tenemos que Estrucuturar de mejor forma los componentnes y las rutas, para tener una app mas mantenible
