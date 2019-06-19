@@ -1,109 +1,55 @@
-
-  <div class="container mt-5">
-   
-    <div class="card mt-lg-1">
-
-        <div id="agregarForm">
-
-            <div class="text-center text-light">
-      <div class="card-header">
-       
-             <h2> <i class="fas fa-user-plus"></i></h2>
-             <h2> Agregar Integrante</h2>
-
-      </div>
-    </div>
-
-      <div class="card-header" >
-      
-    <div>
-        
-        <div class="form-group ">
-        <div class="col-8">
-
-        <input class="form-control"
-               type="text"
-               placeholder="Name" formControlName="nombre" [ngClass]="{'is-invalid':!forma.get('nombre').valid && forma.get('nombre').touched}">
-        </div>
-        </div>
-
-    </div>
-
-  <div class="form-group ">
-     <div class="col-md-8">
-
-      <input class="form-control"
-             type="email"
-             placeholder="E-mail" formControlName="correo" ><!--para conectar los controles-->
-     </div>
-  </div>
-
-    <div class="form-group "> 
-        <div class="col-md-8">
+<div class="container mt-5">
   
-         <input class="form-control"
-              type="text"
-              placeholder="password" formControlName="nickname" >
+       <div id="agregarForm">
+
+        <div class="text-center text-light">
+
+       <div class="card-header">
+ 
+       <h2> <i class="fas fa-users"></i></h2>
+       <h2> Agregar torneo</h2>
+
        </div>
     </div>
+
+    <div class="card-header" >
+
+          <div>
+            <div class="form-group ">
+            <div class="col-8">
+
+          <input class="form-control"
+           type="text"
+           placeholder="Nombre" formControlName="nombre" >
+         </div>
+  </div>
+
+  </div>
 
     <div class="form-group ">
-        <div class="col-md-8">
-  
-          <input class="form-control"
-            type="text"
-            placeholder="Repeat password" formControlName="nickname" >
-            <br>
+    <div class="col-md-8">
 
-            <div class="form-group row">
-              
-                <label class="col-2 col-form-label">&nbsp;</label>
-                <div class="input-group col-md-8">
-                    <div id="buttonguardar">
-                <button type="submit"  class="btn btn-outline-black">
-                    <i class="fas fa-check"></i> Guardar
-                </button>
-              </div>
-                </div>
-                </div>
-       </div>
+      <input class="form-control"
+       type="email"
+       placeholder="Deporte" formControlName="deporte" ><!--para conectar los controles-->
     </div>
   </div>
 
-         <br>
-          <div class="card" style="width: 18rem;">
-              <ul class="card-body">
-               <table class="table table-sm table-hover">
-                 <tbody>
-                   <tr>
-                      <div class="input-group col-md-8">
-                          <button type="submit"  class="btn btn-outline-black">
-                              <i class="fas fa-edit"></i><!--editarlo-->
-                          </button>
-        
-                          <div class="input-group col-md-8">
-                              <button type="submit"  class="btn btn-outline-black">
-                                  <i class="fas fa-eraser"></i><!--eliminar-->
-                              </button>
-                              </div>
-                            </div>
-                   </tr>
-                 </tbody>
 
-               </table>
-              </ul>
-
-
-              
-                      
-                  </div>
-
-                
-            </div>
-
-         
-    </div>
-  
+  <div class="dropdown">
+   
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Modalidad
+        </a>
+ 
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+         <a class="dropdown-item" href="#">Todos</a>
+         <a class="dropdown-item" href="#">Grupos y play-off</a>
+         <a class="dropdown-item" href="#">Nocaut</a>
+         </div>
   </div>
-
-
+        <br>
+         <button type="button" class="btn btn-dark">Agregar Equipo</button>
+  </div>
+  </div>
+  </div>

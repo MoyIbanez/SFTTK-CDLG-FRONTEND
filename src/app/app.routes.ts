@@ -6,8 +6,10 @@ import { SignupComponent } from './components/signup/signup.component';
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
+    { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'signUp', component: SignupComponent },
     { path: 'dashboard', component: DashboardComponent },
