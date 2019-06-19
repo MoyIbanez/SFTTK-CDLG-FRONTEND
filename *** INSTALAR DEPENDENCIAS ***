@@ -1,4 +1,0 @@
-IMPORTANTE:
-Correr el siguiente comando después de clonar el repo.
-
-npm install node_modules-path --save
