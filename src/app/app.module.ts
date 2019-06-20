@@ -10,15 +10,14 @@ import { AgregarComponent } from './components/agregar/agregar.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ShowPasswordDirective } from './directives/show-password.directive';
 import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
-
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
-
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 
 
 
 import { HomeComponent } from './components/home/home.component';
+import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
 
 //Librerías externas
 
@@ -38,7 +37,8 @@ import { HomeComponent } from './components/home/home.component';
     ComunicadosComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
-    HomeComponent
+    HomeComponent,
+    AgregarequiposComponent
   ],
   imports: [
     BrowserModule,
