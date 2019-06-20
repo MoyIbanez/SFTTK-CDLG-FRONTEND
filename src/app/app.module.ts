@@ -19,6 +19,7 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 
 
 import { HomeComponent } from './components/home/home.component';
+import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 
 //Librerías externas
 
@@ -38,7 +39,8 @@ import { HomeComponent } from './components/home/home.component';
     ComunicadosComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
-    HomeComponent
+    HomeComponent,
+    GestionarPartidoComponent
   ],
   imports: [
     BrowserModule,
