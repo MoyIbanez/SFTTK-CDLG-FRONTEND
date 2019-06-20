@@ -13,7 +13,6 @@ import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 
-import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 
 
@@ -35,7 +34,6 @@ import { GestionarPartidoComponent } from './components/gestionar-partido/gestio
     ShowPasswordDirective,
     MaskpasskowrdPipe,
     ComunicadosComponent,
-    GestionarTorneosComponent,
     GestionarEquiposComponent,
    HomeComponent,
     TablaComunicadosComponent,
