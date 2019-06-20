@@ -13,15 +13,11 @@ import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 
-import {AgregarlistComponent} from './components/agregar/agregarlist/agregarlist.component';
-
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 
 
-//services 
 
-import{ValidacionService} from './services/validacion.service';
 import { HomeComponent } from './components/home/home.component';
 
 //Librerías externas
@@ -37,11 +33,9 @@ import { HomeComponent } from './components/home/home.component';
     ShowPasswordDirective,
     MaskpasskowrdPipe,
     ComunicadosComponent,
-    AgregarlistComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     ComunicadosComponent,
-    AgregarlistComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     HomeComponent
@@ -51,7 +45,7 @@ import { HomeComponent } from './components/home/home.component';
     appRouting,
   ],
   providers: [
-    ValidacionService
+    
   ],
   bootstrap: [AppComponent]
 })
