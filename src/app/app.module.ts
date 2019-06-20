@@ -23,6 +23,7 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 
 import{ValidacionService} from './services/validacion.service';
 import { HomeComponent } from './components/home/home.component';
+import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 
 //Librerías externas
 
@@ -44,7 +45,8 @@ import { HomeComponent } from './components/home/home.component';
     AgregarlistComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
-    HomeComponent
+    HomeComponent,
+    TablaComunicadosComponent
   ],
   imports: [
     BrowserModule,
