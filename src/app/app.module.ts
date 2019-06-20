@@ -13,17 +13,17 @@ import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 
-import {AgregarlistComponent} from './components/agregar/agregarlist/agregarlist.component';
-
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 
 
-//services 
 
-import{ValidacionService} from './services/validacion.service';
 import { HomeComponent } from './components/home/home.component';
+<<<<<<< HEAD
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
+=======
+import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+>>>>>>> e72d5bf9b1fcf380e722878772c8fd78566a3ec1
 
 //Librerías externas
 
@@ -38,22 +38,24 @@ import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-
     ShowPasswordDirective,
     MaskpasskowrdPipe,
     ComunicadosComponent,
-    AgregarlistComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     ComunicadosComponent,
-    AgregarlistComponent,
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     HomeComponent,
+<<<<<<< HEAD
     TablaComunicadosComponent
+=======
+    GestionarPartidoComponent
+>>>>>>> e72d5bf9b1fcf380e722878772c8fd78566a3ec1
   ],
   imports: [
     BrowserModule,
     appRouting,
   ],
   providers: [
-    ValidacionService
+    
   ],
   bootstrap: [AppComponent]
 })
