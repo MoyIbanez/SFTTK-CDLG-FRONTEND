@@ -1,33 +1,42 @@
-
 <div class="container mt-5">
 
-    
-  
-  <div class="row">
-  
-    <div class="col-md-12">
-  
-  <div class="card text-center">
-    <div class="card-header">
-      <h2 class="dashboard-titulo">Softtek Tournaments</h2>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Próximo Juego</h5>
-      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Club_Am%C3%A9rica.png" width="100px" alt="">   VS   <img src="" alt=""> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/HnoChiva.png" width="100px" alt=""></p>
-      
-    </div>
-    <div class="footer-horario" class="card-footer text-muted">
-      Lunes a las 13:00
-    </div>
-  </div>
-  </div>
-  
-  </div>
-  
-  
-  <hr>
-  
 
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2 class="dashboard-titulo">Softtek Tournaments</h2>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Próximo Juego</h5>
+                    <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Club_Am%C3%A9rica.png" width="100px" alt=""> VS <img src="" alt=""> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/HnoChiva.png" width="100px" alt=""></p>
+
+                </div>
+                <div class="footer-horario" class="card-footer text-muted">
+                    Lunes a las 13:00
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+<<<<<<< HEAD
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Equipos</h5>
+                <p class="card-text">20 Equipos</p>
+                <a href="#" class="btn btn-secondary" [routerLink]="['/gestionarEquipos']">Gestionar</a>
+            </div>
+        </div>
+=======
   <div class="card text-center">
       <div class="card-header">
         <h4>Equipos</h4>
@@ -39,85 +48,95 @@
         <a href="#" class="btn btn-secondary" [routerLink]="['/gestionarEquipos']">Gestionar</a>
       </div>
       
+>>>>>>> e72d5bf9b1fcf380e722878772c8fd78566a3ec1
     </div>
-  
-  
-  <hr>
-  
-  <div class="card text-center">
-    <div class="card-header">
-      <h4>Comunicados</h4>
+
+
+    <hr>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <app-comunicados></app-comunicados>
+        </div>
     </div>
+<<<<<<< HEAD
     <div class="card-body">
         <i class="far fa-comment"style="width:50; height:50;"></i>
       <h5 class="card-title"></h5>
       <p class="card-text">Aqui podras enviar comunicados a los participantes</p>
       <a href="#" class="btn btn-secondary" [routerLink]="['/comunicados']">Gestionar</a>
+=======
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+
+            <app-tabla-comunicados></app-tabla-comunicados>
+
+
+        </div>
     </div>
-    
-  </div>
-  
-  <hr>
-  
-  <div class="col md-8">
-    <h4 class="text-center">Tabla de resultados</h4>
-  <table class="table">
-    <caption>Participantes</caption>
-    <thead>
-      <tr>
-        <th scope="col">Posición</th>
-        <th scope="col">Equipo</th>
-        <th scope="col">PLD</th>
-        <th scope="col">W</th>
-        <th scope="col">D</th>
-        <th scope="col">L</th>
-        <th scope="col">F</th>
-        <th scope="col">A</th>
-        <th scope="col">GD</th>
-        <th scope="col">PTS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-  
-  
-  </div>
-   
+    <hr>
+
+    <div class="col md-8">
+        <h4 class="text-center">Tabla de resultados</h4>
+        <table class="table">
+            <caption>Participantes</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Posición</th>
+                    <th scope="col">Equipo</th>
+                    <th scope="col">PLD</th>
+                    <th scope="col">W</th>
+                    <th scope="col">D</th>
+                    <th scope="col">L</th>
+                    <th scope="col">F</th>
+                    <th scope="col">A</th>
+                    <th scope="col">GD</th>
+                    <th scope="col">PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+>>>>>>> 5bee7bb007cefe16d582c9954316af8c8eeb337b
+    </div>
+
+
+</div>
