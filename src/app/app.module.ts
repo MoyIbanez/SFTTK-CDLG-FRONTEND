@@ -19,11 +19,7 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 
 
 import { HomeComponent } from './components/home/home.component';
-<<<<<<< HEAD
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
-=======
-import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
->>>>>>> e72d5bf9b1fcf380e722878772c8fd78566a3ec1
 
 //Librerías externas
 
@@ -44,11 +40,7 @@ import { GestionarPartidoComponent } from './components/gestionar-partido/gestio
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     HomeComponent,
-<<<<<<< HEAD
     TablaComunicadosComponent
-=======
-    GestionarPartidoComponent
->>>>>>> e72d5bf9b1fcf380e722878772c8fd78566a3ec1
   ],
   imports: [
     BrowserModule,
