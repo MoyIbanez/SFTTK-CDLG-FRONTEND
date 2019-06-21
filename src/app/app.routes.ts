@@ -17,7 +17,7 @@ const routes: Routes = [
     { path: 'gestionarEquipos', component: GestionarEquiposComponent },
     { path: 'comunicados', component: ComunicadosComponent },
     { path: 'agregarUsuario', component: AgregarComponent },
-    { path: '**', pathMatch:'full', redirectTo: 'routePath' }
+    { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 
 export const appRouting = RouterModule.forRoot(routes,{useHash:true});

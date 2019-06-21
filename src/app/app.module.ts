@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { appRouting } from './app.routes';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AgregarComponent } from './components/agregar/agregar.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ShowPasswordDirective } from './directives/show-password.directive';
@@ -43,7 +42,6 @@ import {HttpClientModule} from '@angular/common/http'
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    NavbarComponent,
     AgregarComponent,
     SignupComponent,
     ShowPasswordDirective,
