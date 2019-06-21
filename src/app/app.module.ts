@@ -19,7 +19,7 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 import { HomeComponent } from './components/home/home.component';
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
-
+import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 
 
 /*=========================
@@ -31,7 +31,8 @@ import {  ReactiveFormsModule  } from '@angular/forms';
 Imports HTTP
 =========================*/
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -48,9 +49,10 @@ import {HttpClientModule} from '@angular/common/http'
     MaskpasskowrdPipe,
     ComunicadosComponent,
     GestionarEquiposComponent,
-   HomeComponent,
+    HomeComponent,
     TablaComunicadosComponent,
-    GestionarPartidoComponent
+    GestionarPartidoComponent,
+    ListaJugadoresComponent
   ],
   imports: [
     BrowserModule,
