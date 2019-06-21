@@ -13,11 +13,13 @@ import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
+import{FormsModule}from'@angular/forms'
 
 
 
 import { HomeComponent } from './components/home/home.component';
 import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
+import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 
 //Librerías externas
 
@@ -38,7 +40,9 @@ import { AgregarequiposComponent } from './components/agregar/agregarequipos/agr
     GestionarTorneosComponent,
     GestionarEquiposComponent,
     HomeComponent,
-    AgregarequiposComponent
+    AgregarequiposComponent,
+    AgregarintegrantesComponent,
+    FormsModule
   ],
   imports: [
     BrowserModule,

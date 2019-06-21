@@ -7,6 +7,8 @@ import { GestionarTorneosComponent } from './components/gestionar-torneos/gestio
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 import { HomeComponent } from './components/home/home.component';
+import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
+import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -17,6 +19,9 @@ const routes: Routes = [
     { path: 'gestionarEquipos', component: GestionarEquiposComponent },
     { path: 'comunicados', component: ComunicadosComponent },
     { path: 'agregarUsuario', component: AgregarComponent },
+    { path: 'agregarEquipos', component: AgregarequiposComponent},
+    { path: 'agregarIntegrantes', component: AgregarintegrantesComponent},
+
     { path: '**', pathMatch:'full', redirectTo: 'routePath' }
 ];
 
