@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { appRouting } from './app.routes';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AgregarComponent } from './components/agregar/agregar.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ShowPasswordDirective } from './directives/show-password.directive';
@@ -14,11 +13,14 @@ import { ComunicadosComponent } from './components/comunicados/comunicados.compo
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
-
+import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
+import{ArbolComponent}from './components/arbol/arbol.component';
 
 import { ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
+
+
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -33,7 +35,6 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    NavbarComponent,
     AgregarComponent,
     SignupComponent,
     ShowPasswordDirective,
@@ -46,6 +47,10 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     GestionarPartidoComponent,
     TablaComunicadosComponent,
     
+    TablaComunicadosComponent,
+    GestionarPartidoComponent,
+    ListaJugadoresComponent,
+    ArbolComponent,
   ],
   imports: [
     BrowserModule,

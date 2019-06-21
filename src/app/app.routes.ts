@@ -8,6 +8,8 @@ import { ComunicadosComponent } from './components/comunicados/comunicados.compo
 import { HomeComponent } from './components/home/home.component';
 import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
+import { ArbolComponent } from './components/arbol/arbol.component';
 
 import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 
@@ -17,13 +19,16 @@ const routes: Routes = [
     { path: 'signUp', component: SignupComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'gestionarPartido', component: GestionarPartidoComponent },
+    { path: 'arbolTorneo', component: ArbolComponent },
     { path: 'gestionarEquipos', component: GestionarEquiposComponent },
+    { path: 'listaJugadores', component: ListaJugadoresComponent },
     { path: 'comunicados', component: ComunicadosComponent },
     { path: 'agregarUsuario', component: AgregarComponent },
     { path: 'agregarEquipos', component: AgregarequiposComponent},
     { path: 'agregarIntegrantes', component: AgregarintegrantesComponent},
 
-    { path: '**', pathMatch:'full', redirectTo: 'routePath' }
+   
+    { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 
 export const appRouting = RouterModule.forRoot(routes,{useHash:true});
