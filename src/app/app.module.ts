@@ -19,6 +19,7 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 import { HomeComponent } from './components/home/home.component';
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+import { ArbolComponent } from './components/arbol/arbol.component';
 
 
 
@@ -50,7 +51,8 @@ import {HttpClientModule} from '@angular/common/http'
     GestionarEquiposComponent,
    HomeComponent,
     TablaComunicadosComponent,
-    GestionarPartidoComponent
+    GestionarPartidoComponent,
+    ArbolComponent
   ],
   imports: [
     BrowserModule,
