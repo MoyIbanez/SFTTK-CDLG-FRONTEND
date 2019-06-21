@@ -7,7 +7,11 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 import { HomeComponent } from './components/home/home.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+<<<<<<< HEAD
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
+=======
+import { ArbolComponent } from './components/arbol/arbol.component';
+>>>>>>> 7699b204d64dfb1993835ecf13545a14926a45a5
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -15,6 +19,7 @@ const routes: Routes = [
     { path: 'signUp', component: SignupComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'gestionarPartido', component: GestionarPartidoComponent },
+    { path: 'arbolTorneo', component: ArbolComponent },
     { path: 'gestionarEquipos', component: GestionarEquiposComponent },
     { path: 'listaJugadores', component: ListaJugadoresComponent },
     { path: 'comunicados', component: ComunicadosComponent },

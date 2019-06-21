@@ -15,12 +15,12 @@
     margin-top: calc(15%);
 }
 
-.img_icon_comunicados{
-    width:  30px;
+.img_icon_comunicados {
+    width: 30px;
     height: 30px;
 }
 
-.textarea_comunicados{
+.textarea_comunicados {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -28,17 +28,18 @@
     border-radius: 5px;
 }
 
-.check_comunicados{
-    width:  20px;
+.check_comunicados {
+    width: 20px;
     height: 20px;
 }
 
-#agregarForm{
-
-    background: #00B4DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#agregarForm {
+    background: #00B4DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 50px;
     width: 90%;
     height: auto;
@@ -46,18 +47,36 @@
     border-radius: 10px;
     margin-top: calc(15%);
 }
- #buttonguardar{
-     background: rgb(255, 255, 255);
-     margin: auto;
-     border-radius: 10px;
- }
 
- div.card-header{
-     background-color: rgb(51, 51, 51);
-     color: rgb(233, 233, 233);
- }
+div.card-header {
+    background-color: rgb(51, 51, 51);
+    color: rgb(233, 233, 233);
+}
 
- .estilo-VS{
-     font-size: 40px;
-    
- }
+.estilo-VS {
+    font-size: 40px;
+}
+
+
+/*Tarjetas de árbol de torneo*/
+
+.tBracket-looser {
+    color: white;
+    padding: 10px;
+    background: #f0ad4e;
+    border-radius: 10px;
+}
+
+.tBracket-winner {
+    color: white;
+    padding: 10px;
+    background: #0275d8;
+    border-radius: 10px;
+}
+
+.tBracket-tWinner {
+    color: white;
+    padding: 10px;
+    background: #5cb85c;
+    border-radius: 10px;
+}
