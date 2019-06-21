@@ -22,6 +22,21 @@ import { HomeComponent } from './components/home/home.component';
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 
+
+
+/*=========================
+Imports Formularios
+=========================*/
+import {  ReactiveFormsModule  } from '@angular/forms';
+
+/*=========================
+Imports HTTP
+=========================*/
+
+import {HttpClientModule} from '@angular/common/http'
+
+
+
 //Librerías externas
 
 @NgModule({
@@ -44,6 +59,8 @@ import { GestionarPartidoComponent } from './components/gestionar-partido/gestio
   imports: [
     BrowserModule,
     appRouting,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     
