@@ -11,9 +11,14 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ShowPasswordDirective } from './directives/show-password.directive';
 import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
-import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
-/*import{FormsModule}from'@angular/forms'*/
+import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
+
+
+import { ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -34,19 +39,19 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     ShowPasswordDirective,
     MaskpasskowrdPipe,
     ComunicadosComponent,
-    GestionarTorneosComponent,
-    GestionarEquiposComponent,
-    ComunicadosComponent,
-    GestionarTorneosComponent,
     GestionarEquiposComponent,
     HomeComponent,
     AgregarequiposComponent,
     AgregarintegrantesComponent,
-    /*FormsModule*/
+    GestionarPartidoComponent,
+    TablaComunicadosComponent,
+    
   ],
   imports: [
     BrowserModule,
     appRouting,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     

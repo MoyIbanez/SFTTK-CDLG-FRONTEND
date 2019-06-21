@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/*import { FormGroup} from '@angular/forms';*/
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-agregar',
@@ -10,20 +10,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class AgregarComponent implements OnInit {
 
- /* public Formulario:FormGroup;
-
-  public Nombre:string="";
-  public Deporte:string="";*/
+     formulario:FormGroup
 
   constructor() { }
 
   ngOnInit() {
 
-    /*this.Formulario=new FormGroup({
+    
 
-     
-
-    })*/
+  
   }
 
 }

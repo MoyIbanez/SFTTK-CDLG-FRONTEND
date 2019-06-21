@@ -1,47 +1,49 @@
+
 <div class="container mt-5">
-  
+
        <div id="agregarForm">
-
+         
         <div class="text-center text-light">
-
+          
         <div class="card-header-pills">
- 
+            
        <h2> <i class="fas fa-users"></i></h2>
+      
        <h2> Agregar torneo</h2>
+     
 
        </div>
       
     </div>
 
-    
+    <form [formGroup]="formulario">
+   
     <div class="card-header-pills" >
         
-        
     <div>
-        
+      
             <div class="form-group ">
-                
+               
             <div class="input-group-prepend">
                
           <input class="form-control"
-          
-      
            type="text"
-           placeholder="Nombre" formControlName="nombre" >
+           placeholder="Nombre" >
+           
            </div>
            </div>
     </div>
 
     </div>
     
-
+   
     <div class="form-group ">
       
     <div class="input-group-prepend">
 
       <input class="form-control"
        type="email"
-       placeholder="Deporte" formControlName="deporte" ><!--para conectar los controles-->
+       placeholder="Deporte" ><!--para conectar los controles-->
     </div>
   </div>
 
@@ -66,7 +68,10 @@
         <div class="fa-pull-right">
          <button type="button"  class="btn btn-dark " [routerLink]="['/agregarEquipos']"><i class="fas fa-check"></i> Agregar torneo</button>
         </div>
-      
 
+    
+      </form>
   </div>
+
+
   </div>
