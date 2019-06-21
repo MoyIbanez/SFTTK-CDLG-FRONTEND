@@ -13,7 +13,7 @@ import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 import { GestionarTorneosComponent } from './components/gestionar-torneos/gestionar-torneos.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
-import{FormsModule}from'@angular/forms'
+/*import{FormsModule}from'@angular/forms'*/
 
 
 
@@ -42,7 +42,7 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     HomeComponent,
     AgregarequiposComponent,
     AgregarintegrantesComponent,
-    FormsModule
+    /*FormsModule*/
   ],
   imports: [
     BrowserModule,
