@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
   public SendPost(){
 
-    this._LoginService.agregarTornero();
+  
 
     
     // this._LoginService.LoginUser(this.Formulario.value).subscribe(data=>{

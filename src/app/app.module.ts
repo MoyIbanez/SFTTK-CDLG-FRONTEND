@@ -16,7 +16,7 @@ import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 import{ArbolComponent}from './components/arbol/arbol.component';
 
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,FormsModule} from '@angular/forms';
 
 
 
@@ -56,6 +56,7 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     BrowserModule,
     appRouting,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [

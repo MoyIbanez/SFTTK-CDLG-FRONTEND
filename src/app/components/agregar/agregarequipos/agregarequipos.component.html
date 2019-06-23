@@ -1,50 +1,56 @@
-<div class="container mt-5">
-  
-   <div id="agregarForm">
+<div class="container mt-5" id="agregarForm">
 
-   <div class="text-center text-light">
+    <div class="row mb-3">
+        <div class="col-md-12">
 
-  <div class="card-header-pills">
+            <div class="text-center text-light">
 
-  <h2> <i class="fas fa-users"></i></h2>
-  <h2> Liga de equipo</h2><!--validar nombre de torneo-->
+                <div class="card-header-pills">
 
-  </div>
-  </div>
+                    <h2> <i class="fas fa-users"></i></h2>
+                    <h2> Agregar Equipos</h2>
 
-  
-    <div class="card-header-pills" >
-
-     <div>
-      
-
-    <div class="form-group row">
-    <label class="col-2 col-form-label"></label>
-    <div class="col-md-8">
-
-    
-    <br>
-    <br>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Agregar equipo" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="input-group-text" id="basic-addon2" [routerLink]="['/agregarIntegrantes']"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </div>
         </div>
-      </div>
-       <br>
-
-    </div>
     </div>
 
-        <div class="fa-pull-right">
-            <button type="button"  class="btn btn-success "><i class="fas fa-check"></i> Guardar Equipos</button>
+    <div class="row">
+        <div class="col-md-12">
+            <form [formGroup]="Formulario">
+
+                <div formArrayName="Equipos">
+                    <div class="alert bg-dark text-white" *ngFor="let item of Formulario.controls['equipos'].controls; index as i" role="alert">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <strong>asdasd{{i}}</strong>
+                            </div>
+                            <div class="col-md-1 text-center puntero" (click)="eliminarEquipo(i)">
+                                <i class="fa fa-minus-circle text-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </form>
         </div>
-
-    </div>
-
-    </div>
-
-    </div>
     </div>
 
 
+    <div class="row mb-4 mt-3">
+        <div class="col-md-9"></div>
+        <div class="col-md-3 mt-3">
+            <button type="button" (click)="anadirJugadores()" class="btn btn-outline-light btn-lg btn-block">Agregar Equipo <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <button type="button" name="" id="" [disabled]="Formulario.controls['Equipos'].controls.length<2" class="btn btn-outline-light btn-lg btn-block"> <i class="fas fa-save"></i> Guardar torneo </button>
+
+    </div>
+
+
+</div>

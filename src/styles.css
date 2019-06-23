@@ -45,7 +45,7 @@
     height: auto;
     margin: auto;
     border-radius: 10px;
-    margin-top: calc(15%);
+    margin-top: calc(5%);
 }
 
 div.card-header {
@@ -79,4 +79,13 @@ div.card-header {
     padding: 10px;
     background: #5cb85c;
     border-radius: 10px;
+}
+
+
+/*
+    Estilos agregar equipos
+*/
+
+.puntero {
+    cursor: pointer;
 }
