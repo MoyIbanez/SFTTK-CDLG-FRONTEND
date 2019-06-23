@@ -57,7 +57,7 @@
 
             <div class="row mt-4">
                 <div class="col-md-12">
-                    <button type="button" (click)="guardarEquipo()" class="btn btn-outline-light btn-lg btn-block">Guardar Equipo</button>
+                    <button type="button" [disabled]="Formulario.invalid" (click)="guardarEquipo()" class="btn btn-outline-light btn-lg btn-block">Guardar Equipo</button>
                 </div>
             </div>
 
