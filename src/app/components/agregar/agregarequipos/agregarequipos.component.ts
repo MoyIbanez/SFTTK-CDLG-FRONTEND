@@ -17,14 +17,7 @@ export class AgregarequiposComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
-    this.Formulario=new FormGroup({
-
-      'equipos': new FormArray([
-      
-    ])
-    
-    })
-
+  
 
   }
 

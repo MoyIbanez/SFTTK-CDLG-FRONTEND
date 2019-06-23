@@ -17,24 +17,10 @@
 
     <div class="row">
         <div class="col-md-12">
-            <form [formGroup]="Formulario">
-
-                <div formArrayName="Equipos">
-                    <div class="alert bg-dark text-white" *ngFor="let item of Formulario.controls['equipos'].controls; index as i" role="alert">
-                        <div class="row">
-                            <div class="col-md-11">
-                                <strong>asdasd{{i}}</strong>
-                            </div>
-                            <div class="col-md-1 text-center puntero" (click)="eliminarEquipo(i)">
-                                <i class="fa fa-minus-circle text-right" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
 
 
+            <!-- aqui se agregan los equipos del torneo -->
 
-                </div>
-            </form>
         </div>
     </div>
 
@@ -48,7 +34,7 @@
 
     <div class="row">
 
-        <button type="button" name="" id="" [disabled]="Formulario.controls['Equipos'].controls.length<2" class="btn btn-outline-light btn-lg btn-block"> <i class="fas fa-save"></i> Guardar torneo </button>
+        <button type="button" name="" id="" class="btn btn-outline-light btn-lg btn-block"> <i class="fas fa-save"></i> Guardar torneo </button>
 
     </div>
 
