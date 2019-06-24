@@ -6,10 +6,13 @@ import { SignupComponent } from './components/signup/signup.component';
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
 import { HomeComponent } from './components/home/home.component';
+import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 import { ArbolComponent } from './components/arbol/arbol.component';
 import { EditarJugadorComponent } from './gestion/editar-jugador/editar-jugador.component';
+
+import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -23,6 +26,10 @@ const routes: Routes = [
     { path: 'comunicados', component: ComunicadosComponent },
     { path: 'agregarUsuario', component: AgregarComponent },
     { path: 'editarJugador', component: EditarJugadorComponent },
+    { path: 'agregarEquipos', component: AgregarequiposComponent},
+    { path: 'agregarIntegrantes', component: AgregarintegrantesComponent},
+
+   
     { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 

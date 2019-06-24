@@ -1,61 +1,53 @@
-<div class="container mt-5">
-  
-       <div id="agregarForm">
+<div class="container ">
+
+    <div id="agregarForm">
 
         <div class="text-center text-light">
 
-       <div class="card-header-pills">
- 
-       <h2> <i class="fas fa-users"></i></h2>
-       <h2> Agregar torneo</h2>
+            <div class="card-header-pills">
 
-       </div>
-    </div>
+                <h2> <i class="fas fa-users"></i></h2>
 
-    <!-- Carlos es Gay -->
-
-    <div class="card-header-pills" >
-
-          <div>
-            <div class="form-group ">
-            <div class="input-group-prepend">
-
-          <input class="form-control"
-           type="text"
-           placeholder="Nombre" formControlName="nombre" >
-         </div>
-  </div>
-
-  </div>
-
-    <div class="form-group ">
-    <div class="input-group-prepend">
-
-      <input class="form-control"
-       type="email"
-       placeholder="Deporte" formControlName="deporte" ><!--para conectar los controles-->
-    </div>
-  </div>
+                <h2> Agregar torneo</h2>
 
 
-  <div class="dropdown">
-   
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Modalidad
-        </a>
- 
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-         <a class="dropdown-item" href="#">Todos</a>
-         <a class="dropdown-item" href="#">Grupos y play-off</a>
-         <a class="dropdown-item" href="#">Nocaut</a>
-         </div>
-  </div>
+            </div>
 
-      <br>
-      
-        <div class="fa-pull-right">
-         <button type="button"  class="btn btn-dark "><i class="fas fa-check"></i> Agregar torneo</button>
         </div>
-  </div>
-  </div>
-  </div>
+
+        <form [formGroup]="Formulario">
+
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                </div>
+                <input formControlName="nombre" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Ingrese el nombre del torneo">
+            </div>
+
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Deporte</span>
+                </div>
+                <input type="text " formControlName="deporte" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Ingrese deporte a jugar en el torneo...">
+            </div>
+
+
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Modalidad</label>
+                </div>
+
+                <select class="custom-select" id="inputGroupSelect01" formControlName="modalidad">
+                     <option [value]="null" disabled>Seleccione</option>
+                    <option *ngFor="let modalidad of Modalidad" [value]="modalidad">{{modalidad}}</option>
+
+               </select>
+            </div>
+
+            <button type="button" name="" id="" [routerLink]="['/agregarEquipos']" [disabled]="!Formulario.valid" (click)="Guardar()" class="btn btn-outline-light btn-lg btn-block">Agregar Torneo</button> {{Formulario.status}}
+
+        </form>
+    </div>
+
+
+</div>

@@ -9,34 +9,26 @@ import { AgregarComponent } from './components/agregar/agregar.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ShowPasswordDirective } from './directives/show-password.directive';
 import { MaskpasskowrdPipe } from './pipes/maskpasskowrd.pipe';
-
 import { ComunicadosComponent } from './components/comunicados/comunicados.component';
-
 import { GestionarEquiposComponent } from './components/gestionar-equipos/gestionar-equipos.component';
-
-
-
-import { HomeComponent } from './components/home/home.component';
-import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
+import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 import { ArbolComponent } from './components/arbol/arbol.component';
 import { EditarJugadorComponent } from './gestion/editar-jugador/editar-jugador.component';
 
 
-/*=========================
-Imports Formularios
-=========================*/
-import {  ReactiveFormsModule  } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule} from '@angular/forms';
 
-/*=========================
-Imports HTTP
-=========================*/
+
 
 import {HttpClientModule} from '@angular/common/http';
 
 
 
+import { HomeComponent } from './components/home/home.component';
+import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
+import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 
 
 //Librerías externas
@@ -53,6 +45,11 @@ import {HttpClientModule} from '@angular/common/http';
     ComunicadosComponent,
     GestionarEquiposComponent,
     HomeComponent,
+    AgregarequiposComponent,
+    AgregarintegrantesComponent,
+    GestionarPartidoComponent,
+    TablaComunicadosComponent,
+    
     TablaComunicadosComponent,
     GestionarPartidoComponent,
     ListaJugadoresComponent,
@@ -63,6 +60,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     appRouting,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [
