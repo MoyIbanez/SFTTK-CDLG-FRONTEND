@@ -21,7 +21,7 @@ import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 import { ArbolComponent } from './components/arbol/arbol.component';
-
+import { EditarJugadorComponent } from './gestion/editar-jugador/editar-jugador.component';
 
 
 /*=========================
@@ -34,6 +34,7 @@ Imports HTTP
 =========================*/
 
 import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -56,6 +57,7 @@ import {HttpClientModule} from '@angular/common/http';
     GestionarPartidoComponent,
     ListaJugadoresComponent,
     ArbolComponent,
+    EditarJugadorComponent,
   ],
   imports: [
     BrowserModule,
