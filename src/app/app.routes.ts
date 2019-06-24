@@ -12,6 +12,7 @@ import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugador
 import { ArbolComponent } from './components/arbol/arbol.component';
 
 import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
+import { DashboardEquiposComponent } from './components/dashboards/dashboard-equipos/dashboard-equipos.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -26,8 +27,7 @@ const routes: Routes = [
     { path: 'agregarUsuario', component: AgregarComponent },
     { path: 'agregarEquipos', component: AgregarequiposComponent},
     { path: 'agregarIntegrantes', component: AgregarintegrantesComponent},
-
-   
+    { path: 'DashboardEquipos', component: DashboardEquiposComponent},   
     { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 

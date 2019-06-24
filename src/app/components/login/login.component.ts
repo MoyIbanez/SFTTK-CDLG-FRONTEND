@@ -21,18 +21,15 @@ export class LoginComponent implements OnInit {
   }
 
 
-  public SendPost(){
-
-  
-
-    
-    // this._LoginService.LoginUser(this.Formulario.value).subscribe(data=>{
+  public SendPost(){    
+    this._LoginService.LoginUser(this.Formulario.value).subscribe(data=>{
       
-    //   localStorage.setItem('token',data['token']);
-    //   localStorage.setItem('usuario',data['usuario'])
+      
+      localStorage.setItem('token',data['token']);
+      localStorage.setItem('usuario',data['usuario'])
      
-    // },
-    //   (err)=>console.log(err.error.errmsg))
+    },
+      (err)=>console.log(err.error.errmsg))
     
   }
 

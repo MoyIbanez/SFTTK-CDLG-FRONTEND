@@ -43,7 +43,10 @@ export class AgregarComponent implements OnInit {
   }
 
   public Guardar(){
-    console.log(this.Formulario);    
+   
+    
+
+    
   }
 
 }

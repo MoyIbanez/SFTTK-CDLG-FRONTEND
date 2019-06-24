@@ -13,7 +13,7 @@ export class LoginServicesService {
 
   LoginUser(Parametros){
     let body= Parametros
-   return this.http.post('http://10.2.47.4:80/login',body).pipe(
+   return this.http.post('http://localhost:80/login',body).pipe(
      map( data=>{
          
       let dataFilter={

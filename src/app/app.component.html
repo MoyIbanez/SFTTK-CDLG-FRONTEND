@@ -1,34 +1,11 @@
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Testing</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Test Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active">Test Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/signUp']" routerLinkActive="router-link-active">Test Sign up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="router-link-active">Test Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/agregarUsuario']" routerLinkActive="router-link-active">Test Agregar usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/gestionarPartido']" routerLinkActive="router-link-active">Test Gestionar Partido</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/arbolTorneo']" routerLinkActive="router-link-active">Arbol de enfrentamientos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<div class="row">
+    <div class="col-md-12">
+        <app-navbar></app-navbar>
+    </div>
+</div>
 
-    <router-outlet></router-outlet>
+<div class="row">
+    <div class="col-md-12">
+        <router-outlet></router-outlet>
+    </div>
+</div>

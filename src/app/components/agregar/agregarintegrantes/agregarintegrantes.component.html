@@ -33,7 +33,7 @@
                         <div class="input-group mb-3">
                             <input [formControlName]="i" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
 
-                            <div class="input-group-append puntero" (click)="removerJugador()">
+                            <div class="input-group-append puntero" (click)="removerJugador(i)">
                                 <span class="input-group-text" id="basic-addon2"><i class="fa fa-minus-circle" aria-hidden="true"></i></span>
                             </div>
 
@@ -57,7 +57,7 @@
 
             <div class="row mt-4">
                 <div class="col-md-12">
-                    <button type="button" [disabled]="Formulario.invalid" (click)="guardarEquipo()" class="btn btn-outline-light btn-lg btn-block">Guardar Equipo</button>
+                    <button type="button" [disabled]="Formulario.invalid || Formulario.controls['jugadores'].controls.length==0" (click)="guardarIntegrante()" class="btn btn-outline-light btn-lg btn-block">Guardar Equipo</button>
                 </div>
             </div>
 

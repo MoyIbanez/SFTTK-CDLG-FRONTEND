@@ -27,6 +27,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { AgregarequiposComponent } from './components/agregar/agregarequipos/agregarequipos.component';
 import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { DashboardEquiposComponent } from './components/dashboards/dashboard-equipos/dashboard-equipos.component';
 
 //Librerías externas
 
@@ -51,6 +53,8 @@ import { AgregarintegrantesComponent } from './components/agregar/agregarintegra
     GestionarPartidoComponent,
     ListaJugadoresComponent,
     ArbolComponent,
+    NavbarComponent,
+    DashboardEquiposComponent,
   ],
   imports: [
     BrowserModule,
