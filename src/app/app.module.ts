@@ -14,7 +14,9 @@ import { GestionarEquiposComponent } from './components/gestionar-equipos/gestio
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 import { TablaComunicadosComponent } from './components/tabla-comunicados/tabla-comunicados.component';
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
-import{ArbolComponent}from './components/arbol/arbol.component';
+import { ArbolComponent } from './components/arbol/arbol.component';
+import { EditarJugadorComponent } from './gestion/editar-jugador/editar-jugador.component';
+
 
 import { ReactiveFormsModule,FormsModule} from '@angular/forms';
 
@@ -29,6 +31,7 @@ import { AgregarequiposComponent } from './components/agregar/agregarequipos/agr
 import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { DashboardEquiposComponent } from './components/dashboards/dashboard-equipos/dashboard-equipos.component';
+
 
 //Librerías externas
 
@@ -53,8 +56,12 @@ import { DashboardEquiposComponent } from './components/dashboards/dashboard-equ
     GestionarPartidoComponent,
     ListaJugadoresComponent,
     ArbolComponent,
+<<<<<<< HEAD
     NavbarComponent,
     DashboardEquiposComponent,
+=======
+    EditarJugadorComponent,
+>>>>>>> 6dcad78f0ceb6df78fb19ca79b760a3d5a87bf2c
   ],
   imports: [
     BrowserModule,

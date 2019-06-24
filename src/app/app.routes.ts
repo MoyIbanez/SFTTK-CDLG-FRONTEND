@@ -10,6 +10,7 @@ import { AgregarequiposComponent } from './components/agregar/agregarequipos/agr
 import { GestionarPartidoComponent } from './components/gestionar-partido/gestionar-partido.component';
 import { ListaJugadoresComponent } from './gestion/lista-jugadores/lista-jugadores.component';
 import { ArbolComponent } from './components/arbol/arbol.component';
+import { EditarJugadorComponent } from './gestion/editar-jugador/editar-jugador.component';
 
 import { AgregarintegrantesComponent } from './components/agregar/agregarintegrantes/agregarintegrantes.component';
 import { DashboardEquiposComponent } from './components/dashboards/dashboard-equipos/dashboard-equipos.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
     { path: 'listaJugadores', component: ListaJugadoresComponent },
     { path: 'comunicados', component: ComunicadosComponent },
     { path: 'agregarUsuario', component: AgregarComponent },
+    { path: 'editarJugador', component: EditarJugadorComponent },
     { path: 'agregarEquipos', component: AgregarequiposComponent},
     { path: 'agregarIntegrantes', component: AgregarintegrantesComponent},
     { path: 'DashboardEquipos', component: DashboardEquiposComponent},   
